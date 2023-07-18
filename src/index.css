@@ -50,10 +50,26 @@ article {
 }
 
 article p {
-  margin-top: 0.25rem;
+  margin-top: 0.05rem;
 }
 
 article h3 {
   color: var(--link);
   margin-bottom: 0rem;
 }
+.about-text span {
+  position: relative;
+}
+
+.about-text span:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: green;
+}
+
+
+
